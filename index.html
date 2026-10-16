@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HopeHub | Child Welfare & Donation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">♥</span><span><b>HopeHub</b><small>Share Today, Change Tomorrow</small></span></a>
+      <nav class="nav">
+        <a class="active" href="#dashboard">⌂ <span>Dashboard</span></a>
+        <a href="#donate">♧ <span>Donate</span></a>
+        <a href="#needs">♡ <span>Needs</span></a>
+        <a href="#activity">▣ <span>My Donations</span></a>
+        <a href="#needs">♧ <span>My Bookmarks</span></a>
+        <a href="#ngos">♙ <span>NGOs</span></a>
+        <a href="#volunteer">♧ <span>Volunteer</span></a>
+        <a href="#impact">▥ <span>Impact</span></a>
+        <a href="#about">ⓘ <span>About Us</span></a>
+        <a href="#contact">☏ <span>Contact Us</span></a>
+      </nav>
+      <div class="sidebar-cta">
+        <div class="heart-hands">♥</div>
+        <b>Be the reason<br>someone smiles today.</b>
+        <a class="btn btn-primary btn-full" href="#donate">Donate Now</a>
+      </div>
+    </aside>
+
+    <main class="main" id="dashboard">
+      <header class="topbar">
+        <div class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search for needs, NGOs, donation drives..." /></div>
+        <div class="profile-tools"><button class="icon-button" aria-label="Notifications">♧<i></i></button><div class="avatar">AP</div><div class="profile-name"><b>Aman Pandey</b><small>Donor</small></div><span class="chevron">⌄</span></div>
+      </header>
+
+      <section class="hero panel">
+        <div class="hero-copy">
+          <span class="eyebrow">MAKE A DIFFERENCE</span>
+          <h1>Small Act,<br><span>Big Impact.</span></h1>
+          <p>Your little contribution can bring<br>a big change in a child's life.</p>
+          <a class="btn btn-primary" href="#needs">Explore Needs <span>→</span></a>
+          <div class="slider-dots"><b></b><i></i><i></i><i></i></div>
+        </div>
+        <div class="hero-photo" role="img" aria-label="School children smiling">
+          <div class="photo-label"><span>✦</span> Every child deserves a chance</div>
+        </div>
+        <div class="hero-decor">♡</div>
+      </section>
+
+      <section class="stats-grid" id="impact">
+        <article class="stat-card"><div class="stat-icon purple">♙</div><div><strong>1,248</strong><small>Total Donations</small></div></article>
+        <article class="stat-card"><div class="stat-icon blue">♥</div><div><strong>320</strong><small>Happy Donors</small></div></article>
+        <article class="stat-card"><div class="stat-icon orange">◷</div><div><strong>560</strong><small>Completed Drives</small></div></article>
+        <article class="stat-card"><div class="stat-icon pink">♧</div><div><strong>4,250</strong><small>Children Impacted</small></div></article>
+      </section>
+
+      <section class="content-grid">
+        <div class="left-column">
+          <section class="panel needs-panel" id="needs">
+            <div class="section-heading"><div><h2>Recent Needs</h2><p>Small contributions create lasting change</p></div><a href="#needs" class="text-link">View All →</a></div>
+            <div class="need-list" id="needList">
+              <article class="need-item" data-search="school bags children education bhopal">
+                <div class="need-photo school"></div><div class="need-info"><h3>School Bags for 30 Children</h3><p>ABC Foundation, Bhopal <span class="tag blue-tag">Education</span></p><div class="progress"><span style="width:50%"></span></div></div><div class="need-count"><b>15 / 30</b><small>Still needed</small></div>
+              </article>
+              <article class="need-item" data-search="nutritious meals food children indore">
+                <div class="need-photo meals"></div><div class="need-info"><h3>Nutritious Meals for 50 Children</h3><p>FoodCare India, Indore <span class="tag green-tag">Food</span></p><div class="progress green-progress"><span style="width:56%"></span></div></div><div class="need-count"><b>28 / 50</b><small>Still needed</small></div>
+              </article>
+              <article class="need-item" data-search="winter uniforms clothes children jabalpur">
+                <div class="need-photo uniforms"></div><div class="need-info"><h3>Winter Uniforms for 20 Children</h3><p>Care & Share, Jabalpur <span class="tag orange-tag">Clothes</span></p><div class="progress orange-progress"><span style="width:35%"></span></div></div><div class="need-count"><b>7 / 20</b><small>Still needed</small></div>
+              </article>
+            </div>
+            <p class="empty-state" id="emptyState" hidden>No matching needs found. Try another search.</p>
+          </section>
+          <section class="panel categories-panel" id="donate">
+            <div class="section-heading"><div><h2>Explore by Category</h2><p>Choose what you would like to support</p></div><a href="#donate" class="text-link">View All →</a></div>
+            <div class="category-grid">
+              <button class="category" data-category="Food"><span class="cat-icon food">♨</span><b>Food</b></button>
+              <button class="category" data-category="Books"><span class="cat-icon books">▤</span><b>Books</b></button>
+              <button class="category" data-category="Clothes"><span class="cat-icon clothes">♟</span><b>Clothes</b></button>
+              <button class="category" data-category="Stationery"><span class="cat-icon stationery">✎</span><b>Stationery</b></button>
+              <button class="category" data-category="Education"><span class="cat-icon education">⌂</span><b>Education</b></button>
+              <button class="category" data-category="Medical"><span class="cat-icon medical">✚</span><b>Medical</b></button>
+              <button class="category" data-category="Toys"><span class="cat-icon toys">♧</span><b>Toys</b></button>
+              <button class="category" data-category="Other"><span class="cat-icon other">•••</span><b>Other</b></button>
+            </div>
+          </section>
+        </div>
+
+        <div class="right-column">
+          <section class="panel quick-panel">
+            <div class="section-heading"><h2>Quick Donate</h2><a href="#donate" class="text-link">View All</a></div>
+            <div class="quick-grid">
+              <button data-category="Food"><span class="quick-icon food">♨</span>Food</button>
+              <button data-category="Books"><span class="quick-icon books">▤</span>Books</button>
+              <button data-category="Clothes"><span class="quick-icon clothes">♟</span>Clothes</button>
+              <button data-category="Stationery"><span class="quick-icon stationery">✎</span>Stationery</button>
+              <button data-category="Education"><span class="quick-icon education">⌂</span>Education</button>
+              <button data-category="Medical"><span class="quick-icon medical">✚</span>Medical</button>
+              <button data-category="Toys"><span class="quick-icon toys">♧</span>Toys</button>
+              <button data-category="Other"><span class="quick-icon other">•••</span>Other</button>
+            </div>
+          </section>
+          <section class="panel activity-panel" id="activity">
+            <div class="section-heading"><h2>Recent Donation Activity</h2><a href="#activity" class="text-link">View All</a></div>
+            <div class="activity-list">
+              <div class="activity-row"><span class="activity-icon books">▤</span><div><b>You donated Books</b><small>to ABC Foundation</small></div><time>2 days ago</time></div>
+              <div class="activity-row"><span class="activity-icon food">♨</span><div><b>You donated Food</b><small>to FoodCare India</small></div><time>5 days ago</time></div>
+              <div class="activity-row"><span class="activity-icon stationery">✎</span><div><b>You donated Stationery</b><small>to Bright Future NGO</small></div><time>1 week ago</time></div>
+              <div class="activity-row"><span class="activity-icon clothes">♟</span><div><b>You donated Clothes</b><small>to Care & Share</small></div><time>2 weeks ago</time></div>
+            </div>
+          </section>
+          <section class="panel ngos-panel" id="ngos">
+            <div class="section-heading"><h2>Top NGOs</h2><a href="#ngos" class="text-link">View All</a></div>
+            <div class="ngo-list">
+              <div class="ngo"><span class="ngo-logo">A</span><div><b>ABC Foundation</b><small>Bhopal, MP</small><span class="rating">★ 4.8 <small>(120)</small></span></div></div>
+              <div class="ngo"><span class="ngo-logo green-logo">F</span><div><b>FoodCare India</b><small>Indore, MP</small><span class="rating">★ 4.6 <small>(98)</small></span></div></div>
+              <div class="ngo"><span class="ngo-logo orange-logo">B</span><div><b>Bright Future NGO</b><small>Gwalior, MP</small><span class="rating">★ 4.7 <small>(74)</small></span></div></div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="bottom-banner" id="volunteer"><div class="banner-heart">♥</div><div><b>Join thousands of kind hearts making a difference.</b><small>Your support today can create a better tomorrow.</small></div><a href="#donate" class="btn btn-primary">Start Donating Now <span>→</span></a></section>
+      <footer id="about">HopeHub <span>•</span> Child Welfare & Donation Platform <a id="contact" href="mailto:hello@hopehub.example">Contact us</a></footer>
+    </main>
+  </div>
+
+  <dialog id="donationDialog" class="donation-dialog">
+    <form method="dialog" id="donationForm">
+      <button class="dialog-close" aria-label="Close">×</button>
+      <div class="dialog-mark">♥</div>
+      <p class="eyebrow">MAKE A DIFFERENCE</p>
+      <h2>Support a cause</h2>
+      <p class="dialog-description">Choose a category and enter a contribution amount. This is a front-end demo; no payment will be processed.</p>
+      <label for="donationCategory">Donation category</label>
+      <select id="donationCategory"><option>Food</option><option>Books</option><option>Clothes</option><option>Stationery</option><option>Education</option><option>Medical</option><option>Toys</option><option>Other</option></select>
+      <label for="donationAmount">Contribution amount (₹)</label>
+      <input id="donationAmount" type="number" min="1" value="500" required />
+      <div class="amount-choices"><button type="button" data-amount="100">₹100</button><button type="button" data-amount="500">₹500</button><button type="button" data-amount="1000">₹1,000</button></div>
+      <button class="btn btn-primary btn-full" id="confirmDonation" type="button">Continue</button>
+      <p class="form-message" id="formMessage" role="status"></p>
+    </form>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
